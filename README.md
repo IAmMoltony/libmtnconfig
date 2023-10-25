@@ -18,10 +18,10 @@ Keys can be any string of characters except for space. Spaces are used to separa
 ## API
 
 ```c
-void mtnconfigInit(const char *configPath);
+bool mtnconfigInit(const char *configPath);
 ```
 
-Initializes config system and reads the config from `configPath`.
+Initializes config system and reads the config from `configPath`. Returns `false` on error.
 
 ```c
 const char *mtnconfigGet(const char *key);
