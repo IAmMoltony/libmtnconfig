@@ -90,7 +90,7 @@ bool mtnconfigInit(const char *configPath)
 	return true;
 }
 
-const char *configGet(const char *key)
+const char *mtnconfigGet(const char *key)
 {
 	for (ConfigDict *d = _cfgDict;; d = d->next)
 	{
@@ -103,7 +103,7 @@ const char *configGet(const char *key)
 	return "";
 }
 
-int configGetInt(const char *key)
+int mtnconfigGetInt(const char *key)
 {
 	const char *strValue = configGet(key);
 
