@@ -35,6 +35,6 @@ int mtnconfigGetInt(const char *key);
 
 Gets a number value with the given key. If the value is not a valid number, then this might crash or return some garbage value.
 
-## Using
+## Using the library in your project
 
 Paste the header and source of the library into your project.
