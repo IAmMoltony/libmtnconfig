@@ -7,6 +7,8 @@
 #ifndef MTNCONFIG_H_
 #define MTNCONFIG_H_ 1
 
+#include <stdbool.h>
+
 #ifdef __cplusplus
 extern "C"
 {

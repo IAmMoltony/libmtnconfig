@@ -16,7 +16,7 @@ typedef struct cfgdict
 
 static ConfigDict *_cfgDict = NULL;
 
-void mtnconfigInit(const char *configPath)
+bool mtnconfigInit(const char *configPath)
 {
 	FILE *configFile = fopen(configPath, "r");
 	if (!configFile)
@@ -25,7 +25,7 @@ void mtnconfigInit(const char *configPath)
 	char buf[MTNCONFIG_MAX_LINE_LEN];
 	char keyBuf[MTNCONFIG_MAX_LINE_LEN];
 	char valueBuf[MTNCONFIG_MAX_LINE_LEN];
-	while (fgets(buf, MAX_LINE_LEN, configFile))
+	while (fgets(buf, MTNCONFIG_MAX_LINE_LEN, configFile))
 	{
 		if (buf[0] == '#' || buf[0] == '\n')
 			continue; // comment or empty line
