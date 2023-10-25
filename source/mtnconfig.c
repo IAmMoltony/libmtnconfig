@@ -105,7 +105,7 @@ const char *mtnconfigGet(const char *key)
 
 int mtnconfigGetInt(const char *key)
 {
-	const char *strValue = configGet(key);
+	const char *strValue = mtnconfigGet(key);
 
 	// return 0 if key not found
 	if (strlen(strValue) == 0)
