@@ -38,3 +38,7 @@ Gets a number value with the given key. If the value is not a valid number, then
 ## Using the library in your project
 
 Paste the header and source of the library into your project.
+
+## Platform compatibility
+
+Since it doesn't use any platform-specific APIs, it should work anywhere where there's a C standard library (any hosted environment).
