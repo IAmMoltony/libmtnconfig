@@ -16,7 +16,7 @@ extern "C"
  * @brief Initialize config
  * @param configPath where config is located
 */
-void mtnconfigInit(const char *configPath);
+bool mtnconfigInit(const char *configPath);
 
 /**
  * @brief Get value from config with the given key as a string

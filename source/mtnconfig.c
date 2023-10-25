@@ -86,6 +86,8 @@ void mtnconfigInit(const char *configPath)
 	}
 
 	fclose(configFile);
+
+	return true;
 }
 
 const char *configGet(const char *key)
