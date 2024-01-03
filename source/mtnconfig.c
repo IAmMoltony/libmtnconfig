@@ -113,3 +113,14 @@ int mtnconfigGetInt(const char *key)
 
 	return atoi(strValue);
 }
+
+bool mtnconfigGetBool(const char *key)
+{
+    const char *strValue = mtnconfigGet(key);
+
+    // return false if key not found
+    if (strlen(strValue) == 0)
+        return 0;
+
+    return strcmp(strValue, "true") == 0;
+}

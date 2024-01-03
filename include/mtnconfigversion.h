@@ -15,7 +15,7 @@
 /**
  * @brief MtnConfig minor version
 */
-#define MTNCONFIG_MINOR 0
+#define MTNCONFIG_MINOR 1
 
 /**
  * @brief MtnConfig patch 

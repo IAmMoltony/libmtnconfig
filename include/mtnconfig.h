@@ -32,6 +32,12 @@ const char *mtnconfigGet(const char *key);
 */
 int mtnconfigGetInt(const char *key);
 
+/**
+ * @brief Get value from config with the given key as boolean (true/false)
+ * @param key entry key
+ */
+bool mtnconfigGetBool(const char *key);
+
 #ifdef __cplusplus
 }
 #endif
