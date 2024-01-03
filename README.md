@@ -35,6 +35,12 @@ int mtnconfigGetInt(const char *key);
 
 Gets a number value with the given key. If the value is not a valid number, then this might crash or return some garbage value.
 
+```c
+bool mtnconfigGetBool(const char *key);
+```
+
+Gets a boolean value (`true`/`false`) with the given key. If the value is neither `true` nor `false`, then it will return `false`.
+
 ## Using the library in your project
 
 Paste the header and source of the library into your project.
