@@ -2,6 +2,9 @@
 
 `libmtnconfig` is a simple config file library originally created for [ds-craft](https://github.com/IAmMoltony/ds-craft).
 
+**Notice**: This library is now in *maintenance mode*. It will not actively receive new features, but issues will still
+be reviewed and pull requests will be merged.
+
 ## Config syntax
 
 Here's an example config that covers everyting:
@@ -11,6 +14,7 @@ Here's an example config that covers everyting:
 
 userName moltony
 numberValue 4352
+likedToCode true
 ```
 
 Keys can be any string of characters except for space. Spaces are used to separate the key and value. The value can be anything, even if it has spaces.
